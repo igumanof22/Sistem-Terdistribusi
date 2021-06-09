@@ -15,5 +15,6 @@ import java.rmi.RemoteException;
 public interface DataInterface_1811081007 extends Remote{
     public void FirstMethod() throws RemoteException;    
     public void SecondMethod() throws RemoteException;    
-    public void salam() throws RemoteException;    
+    public void salam() throws RemoteException;  
+    public void KalkulatorSederhana() throws RemoteException;
 }
