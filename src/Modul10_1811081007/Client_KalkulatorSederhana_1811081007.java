@@ -27,6 +27,8 @@ public class Client_KalkulatorSederhana_1811081007 {
         DataInterface_1811081007 data_1007 = (DataInterface_1811081007) Naming.lookup("rmi://localhost:1009/data");
         System.out.println("Client is Connect to Server");
         
+        data_1007.KalkulatorSederhana();
+        
         Scanner in = new Scanner(System.in);
         System.out.println("+ - / x");
         System.out.print("Input (ex. 2 + 2) : ");
@@ -35,9 +37,7 @@ public class Client_KalkulatorSederhana_1811081007 {
         DatagramPacket packet_1007 = new DatagramPacket(message.getBytes(), message.length(), InetAddress.getLocalHost(), 1009);
         socket_1007.send(packet_1007);
         socket_1007.close();
-        
-        data_1007.KalkulatorSederhana();
-        
+             
         System.out.println("Finish");
     }
 }
